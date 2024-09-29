@@ -1,0 +1,24 @@
+_______________________________ REFERENCJE ______________________________________
+1. Na screenie AUTO Dodać opis MODEL i Wyświetlić dwu cyfrowy numer z receptury
+2. Na screenie Ekran Główny dodać kafelkę do okna wyboru referencji (dla operatorów)
+3. Dodać screen Wybór REFERENCJI - usunąć wyświetlanie RECIPIES zostawić RECORDS tylko 
+	W Data rekord dodać referencje które prześlą mailem 
+	W elementach receptury dodać : prędkość obrotu , czas taktu , delay sił zagniatania
+	delay sił odbioru stół, czas ejector ssanie , czas ejector przedmuch 
+	elementy receptury muszą się odwoływać do "nowych wartości" żeby nie było problemu
+	z przeliczaniem wartości 
+4. Dodać screen Edycja REFERENCJI w miejsce teraźniejszych ustawień. Screen pod hasło PE- 1410
+	na screenie umożliwiającym edycje dodać ikony:
+		Add new record ->  do dodawania przez PE nowych referencji
+		Save -> do zapisana danych w recepturze
+		Save AS -> do zapisania np kopii receptury 
+		Rename -> do zmiany nazwy 
+		Load to PLC -> do wgrania parametrów do sterownika 
+		Read to PLC -> do zczytania aktualnych wartości sterownika w celu ich 
+		modyfikacji i późniejszego zapisu
+5. W projekcie HMI -> utworzyć recepturę MODELE dodać do niej elementy : 
+	prędkość obrotu , czas taktu , delay sił zagniatania
+	delay sił odbioru stół, czas ejector ssanie , czas ejector przedmuch
+	Elementy z linkować z tagami db.procesvalue.nowy_czasXXX
+6.W zakładce data records dodać pre definiowane referencje które będa mieli w planach jechać.
+7.Napisać instrukcje obsługi dotyczącą wyboru i edycji zapisu i usuwania REFERENCJI
