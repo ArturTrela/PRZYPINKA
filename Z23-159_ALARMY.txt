@@ -1,0 +1,17 @@
+_______________________________ ALARMY ______________________________________
+1.Dodać DB alarmy
+2.Dodać FC DIAGNOSTYKA 
+3.Dodać alarmy od:
+	- Przekroczony czas obrotu stołu
+	- Przekroczony czas wysunięcia siłownika zagniatania
+	- Przekroczony czas powrotu siłownika zagniatania 
+	- Przekroczony czas wysunięcia siłownika odbioru
+	- Przekroczony czas powrotu siłownika odbioru 
+	- Brak zmiany stanu czujnika pozycji stołu 
+	- Brak zmiany stanu czujnika rozpoznawania gniazda
+	- Alarm serwowzmacniacza HIWIN - sprawdź w szafie
+	- Brak podanej ilość sztuk do wykonania 
+4. Dodać w projekcie HMI screen z dedykowanymi alarmami - sprawdzic jak to działa 
+5. Wymuszenie wyświetlania alarmów w formie POPUP 
+
+

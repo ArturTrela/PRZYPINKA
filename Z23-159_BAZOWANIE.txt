@@ -1,0 +1,10 @@
+_______________________________ BAZOWANIE ______________________________________
+1.Na screenie TRYB RĘCZNY dodać przycisk bazowanie 
+2.W warunkach trybu ręcznego usunąć "TEST_BIT"
+3.Procedurę bazowania rozpocząć od sprawdzenia czy siłownik zagniatania jest w górze
+	oraz czy siłownik odbioru jest w pozycji do zrzutu:
+3. Wykonać obrót stołem i sprawdzić czy stół jest na pozycji oraz czy czujnik gniazda płytkiego jest zainicjowany
+	jeżli jest - ustawić bit POZYCJA_BAZOWA orqaz ustawić numer gniazda na 1 
+	Jeżeli nie to wykonać jeszcze raz obrót 
+4. Na ekranie AUTO dodać kontrolkę informującą o zbazowaniu stołu 
+
