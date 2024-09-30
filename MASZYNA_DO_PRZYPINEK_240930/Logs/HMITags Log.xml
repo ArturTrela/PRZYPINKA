@@ -1,0 +1,130 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="HMITags Log.xml" projectName="D:\PLC_PROG\SIEMENS_PROJEKTY\HMITags.xlsx" typeText="Type" messageText="Message" timeText="Time">
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_SIŁ_ZAG_GÓRA was not found in worksheet Hmi Tags, row 2, column Connection. BTN_SIŁ_ZAG_GÓRA is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_SIŁ_ZAG_DÓŁ was not found in worksheet Hmi Tags, row 3, column Connection. BTN_SIŁ_ZAG_DÓŁ is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_SIŁ_NASTAW_GŁĘBOKIE was not found in worksheet Hmi Tags, row 4, column Connection. BTN_SIŁ_NASTAW_GŁĘBOKIE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_SIŁ_NASTAW_PŁYTKIE was not found in worksheet Hmi Tags, row 5, column Connection. BTN_SIŁ_NASTAW_PŁYTKIE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_SIŁ_ODBIORU_STÓŁ was not found in worksheet Hmi Tags, row 6, column Connection. BTN_SIŁ_ODBIORU_STÓŁ is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_SIŁ_ODBIORU_ZRZUT was not found in worksheet Hmi Tags, row 7, column Connection. BTN_SIŁ_ODBIORU_ZRZUT is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_STÓŁ_JOG_FWD was not found in worksheet Hmi Tags, row 8, column Connection. BTN_STÓŁ_JOG_FWD is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_STÓŁ_JOG_BWD was not found in worksheet Hmi Tags, row 9, column Connection. BTN_STÓŁ_JOG_BWD is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_STÓŁ_DO_POZ_FWD was not found in worksheet Hmi Tags, row 10, column Connection. BTN_STÓŁ_DO_POZ_FWD is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_STÓŁ_DO_POZ_BWD was not found in worksheet Hmi Tags, row 11, column Connection. BTN_STÓŁ_DO_POZ_BWD is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_EJECTOR_SSANIE was not found in worksheet Hmi Tags, row 12, column Connection. BTN_EJECTOR_SSANIE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_EJECTOR_PRZEDMUCH was not found in worksheet Hmi Tags, row 13, column Connection. BTN_EJECTOR_PRZEDMUCH is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_ZMIEN_PREDKOŚĆ was not found in worksheet Hmi Tags, row 14, column Connection. BTN_ZMIEN_PREDKOŚĆ is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_ZMIEŃ_CZAS_PRZEDMUCHU was not found in worksheet Hmi Tags, row 15, column Connection. BTN_ZMIEŃ_CZAS_PRZEDMUCHU is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_ZMIEN_CZAS_SSANIA was not found in worksheet Hmi Tags, row 16, column Connection. BTN_ZMIEN_CZAS_SSANIA is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag AKT_PRED_STOŁU was not found in worksheet Hmi Tags, row 17, column Connection. AKT_PRED_STOŁU is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag NOWA_PRED_STOŁU was not found in worksheet Hmi Tags, row 18, column Connection. NOWA_PRED_STOŁU is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag AKT_CZAS_PRZEDMUCHU was not found in worksheet Hmi Tags, row 19, column Connection. AKT_CZAS_PRZEDMUCHU is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag NOWY_CZAS_PRZEDMUCHU was not found in worksheet Hmi Tags, row 20, column Connection. NOWY_CZAS_PRZEDMUCHU is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag AKT_CZAS_SSANIA was not found in worksheet Hmi Tags, row 21, column Connection. AKT_CZAS_SSANIA is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag NOWY_CZAS_SSANIA was not found in worksheet Hmi Tags, row 22, column Connection. NOWY_CZAS_SSANIA is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag LICZNIK_CAŁKOWITY_NIEKAS was not found in worksheet Hmi Tags, row 23, column Connection. LICZNIK_CAŁKOWITY_NIEKAS is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag LICZNIK_ZADANE was not found in worksheet Hmi Tags, row 24, column Connection. LICZNIK_ZADANE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag LICZNIK_WYKONANE was not found in worksheet Hmi Tags, row 25, column Connection. LICZNIK_WYKONANE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_KASUJ_LICZNIK_ZADANY was not found in worksheet Hmi Tags, row 26, column Connection. BTN_KASUJ_LICZNIK_ZADANY is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_USTAW_LICZNIK_ZADANY was not found in worksheet Hmi Tags, row 27, column Connection. BTN_USTAW_LICZNIK_ZADANY is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_KASUJ_LICZNIK_AKTUALNE was not found in worksheet Hmi Tags, row 28, column Connection. BTN_KASUJ_LICZNIK_AKTUALNE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag SW_LED_ZALACZ was not found in worksheet Hmi Tags, row 29, column Connection. SW_LED_ZALACZ is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag BTN_USTAW_CZAS_TAKTU was not found in worksheet Hmi Tags, row 30, column Connection. BTN_USTAW_CZAS_TAKTU is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag m_AUTO_MODE was not found in worksheet Hmi Tags, row 31, column Connection. m_AUTO_MODE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag i_SIŁOWNIK_ZACISKAJĄCY_UGÓRY was not found in worksheet Hmi Tags, row 32, column Connection. i_SIŁOWNIK_ZACISKAJĄCY_UGÓRY is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag TEST_BIT was not found in worksheet Hmi Tags, row 33, column Connection. TEST_BIT is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag i_SIŁOWNIK_ZACISKAJĄCY_W_DOLE was not found in worksheet Hmi Tags, row 34, column Connection. i_SIŁOWNIK_ZACISKAJĄCY_W_DOLE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag i_SIŁOWNIK NASTAWY_GŁĘBOKIE was not found in worksheet Hmi Tags, row 35, column Connection. i_SIŁOWNIK NASTAWY_GŁĘBOKIE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag i_SIŁOWNIK NASTAWY _PŁYTKIE was not found in worksheet Hmi Tags, row 36, column Connection. i_SIŁOWNIK NASTAWY _PŁYTKIE is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag i_SIŁOWNIK_ODBIORU_POZ_STÓŁ was not found in worksheet Hmi Tags, row 37, column Connection. i_SIŁOWNIK_ODBIORU_POZ_STÓŁ is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag i_SIŁOWNIK_ODBIORU_POZ_ZRZUT was not found in worksheet Hmi Tags, row 38, column Connection. i_SIŁOWNIK_ODBIORU_POZ_ZRZUT is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag i_CZUJNIK_POZYCJI_STOŁU was not found in worksheet Hmi Tags, row 39, column Connection. i_CZUJNIK_POZYCJI_STOŁU is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag AUTO_TAKT_OBRÓT was not found in worksheet Hmi Tags, row 40, column Connection. AUTO_TAKT_OBRÓT is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag TP_TAKT_ZADANA was not found in worksheet Hmi Tags, row 41, column Connection. TP_TAKT_ZADANA is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Warning" dateTime="11:29:06 PM">
+    <Message>The value HMI_Connection_1 of HMI tag TP_LAMP_TEST was not found in worksheet Hmi Tags, row 42, column Connection. TP_LAMP_TEST is not completely imported.</Message>
+  </LogEntry>
+  <LogEntry type="Information" dateTime="11:29:06 PM">
+    <Message>Import finished: 41 tag(s) imported.</Message>
+  </LogEntry>
+</LogFile>
