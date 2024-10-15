@@ -1,0 +1,7 @@
+<?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type='text/xsl' href='MassDataHandlerLogFile.xsl'?>
+<LogFile titleName="HMITags Log_2.xml" projectName="D:\PLC_PROG\SIEMENS_PROJEKTY\HMITags.xlsx" typeText="Type" messageText="Message" timeText="Time">
+  <LogEntry type="Information" dateTime="4:30:21 PM">
+    <Message>Import finished: 41 tag(s) imported.</Message>
+  </LogEntry>
+</LogFile>

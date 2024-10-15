@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- **********
+This file has been upgraded automatically by UpgradeGSDML V2.42!
+Please check the following changes and remove this comment afterwards:
+Read from C:\Program Files (x86)\UpgradeGSDML\pn_upgrade_gsdml_V2.42\GSDML-V2.35-HIWINMIKRO-ED1F-20211210.xml
+Set xsi:schemaLocation to http://www.profibus.com/GSDML/2003/11/DeviceProfile ..\xsd\GSDML-DeviceProfile-V2.42.xsd
+Del ../ExternalTextList/PrimaryLanguage/Text[@TextId="IDT_MOD_NAME_EMPTY"] (not referenced)
+Del ../ExternalTextList/PrimaryLanguage/Text[@TextId="IDT_MOD_INFO_EMPTY"] (not referenced)
+Del ../ExternalTextList/PrimaryLanguage/Text[@TextId="IDT_SM_NAME_PAP"] (not referenced)
+Del ../ExternalTextList/PrimaryLanguage/Text[@TextId="IDT_SM_INFO_PAP"] (not referenced)
+Del ../ExternalTextList/PrimaryLanguage/Text[@TextId="IDT_SM_NAME_TEL7"] (not referenced)
+Del ../ExternalTextList/PrimaryLanguage/Text[@TextId="IDT_SM_INFO_TEL7"] (not referenced)
+Del ../ExternalTextList/PrimaryLanguage/Text[@TextId="IDT_RECORD1"] (not referenced)
+Del ../ExternalTextList/PrimaryLanguage/Text[@TextId="IDT_REC_DIAG_ACTIVATION"] (not referenced)
+Write to C:\Program Files (x86)\UpgradeGSDML\pn_upgrade_gsdml_V2.42\GSDML-V2.42-HIWINMIKRO-ED1F-20220415.xml
+********** -->
+<ISO15745Profile xmlns="http://www.profibus.com/GSDML/2003/11/DeviceProfile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.profibus.com/GSDML/2003/11/DeviceProfile ..\xsd\GSDML-DeviceProfile-V2.42.xsd">
+	<ProfileHeader>
+		<ProfileIdentification>PROFINET Device Profile</ProfileIdentification>
+		<ProfileRevision>1.00</ProfileRevision>
+		<ProfileName>Device Profile for PROFINET Devices</ProfileName>
+		<ProfileSource>PROFIBUS Nutzerorganisation e. V. (PNO)</ProfileSource>
+		<ProfileClassID>Device</ProfileClassID>
+		<ISO15745Reference>
+			<ISO15745Part>4</ISO15745Part>
+			<ISO15745Edition>1</ISO15745Edition>
+			<ProfileTechnology>GSDML</ProfileTechnology>
+		</ISO15745Reference>
+	</ProfileHeader>
+	<ProfileBody>
+		<DeviceIdentity VendorID="0x0AAA" DeviceID="0x0005">
+			<InfoText TextId="IDT_FamilyDescription"/>
+			<VendorName Value="HIWIN MIKROSYSTEM CORP."/>
+		</DeviceIdentity>
+		<DeviceFunction>
+			<Family MainFamily="Drives" ProductFamily="E1"/>
+		</DeviceFunction>
+		<ApplicationProcess>
+
+				<!-- ============================================================================================ -->
+
+			<DeviceAccessPointList>
+				<!-- DAP: ED1F-PROFINET -->
+				<DeviceAccessPointItem ID="ED1F_DAP" PhysicalSlots="0..1" ModuleIdentNumber="0x00000001" MinDeviceInterval="16" ImplementationType="TPS-1" DNS_CompatibleName="ED1F-PROFINET" FixedInSlots="0" ObjectUUID_LocalIndex="1" DeviceAccessSupported="true" NumberOfDeviceAccessAR="1" RequiredSchemaVersion="V2.32" PNIO_Version="V2.42" MultipleWriteSupported="true" PowerOnToCommReady="210" CheckDeviceID_Allowed="true" LLDP_NoD_Supported="true" ResetToFactoryModes="2 8" NameOfStationNotTransferable="false">
+					<ModuleInfo>
+						<Name TextId="IDT_DAP_NAME"/>
+						<InfoText TextId="IDT_DAP_INFO"/>
+						<Family MainFamily="Drives" ProductFamily="E1"/>
+						<VendorName Value="HIWIN MIKROSYSTEM CORP."/>
+						<OrderNumber Value="ED1F-Px-xxxx-xx"/>
+						<HardwareRelease Value="1"/>
+						<SoftwareRelease Value="V17.1.14"/>
+					</ModuleInfo>
+					<CertificationInfo ApplicationClass="Isochronous" ConformanceClass="C" NetloadClass="II"/>
+					<SubslotList>
+						<SubslotItem SubslotNumber="32768" TextId="IDT_SS_IF_CU"/>
+						<SubslotItem SubslotNumber="32769" TextId="IDT_SS_P1_CU"/>
+						<SubslotItem SubslotNumber="32770" TextId="IDT_SS_P2_CU"/>
+					</SubslotList>
+					<IOConfigData MaxInputLength="68" MaxOutputLength="52"/>
+					<UseableModules>
+						<ModuleItemRef ModuleItemTarget="IDM_DRIVE" AllowedInSlots="1" FixedInSlots="1"/>
+					</UseableModules>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="IDS_DAP" SubmoduleIdentNumber="0x00000001" Writeable_IM_Records="1 2 3 4" MayIssueProcessAlarm="false">
+							<IOData/>
+							<ModuleInfo>
+								<Name TextId="IDT_DAP_NAME"/>
+								<InfoText TextId="IDT_DAP_INFO"/>
+							</ModuleInfo>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+					<SystemDefinedSubmoduleList>
+						<InterfaceSubmoduleItem ID="IDS_IF" SubmoduleIdentNumber="0x0000000a" TextId="IDT_ISM_CU" SubslotNumber="32768" SupportedProtocols="SNMP;LLDP" SupportedRT_Classes="RT_CLASS_1;RT_CLASS_2;RT_CLASS_3" IsochroneModeInRT_Classes="RT_CLASS_3" IsochroneModeSupported="true" DCP_BoundarySupported="true" PTP_BoundarySupported="true" DelayMeasurementSupported="true" SupportedDelayMeasurements="PTCP">
+							<RT_Class3Properties MaxBridgeDelay="3860" MaxNumberIR_FrameData="128" StartupMode="Legacy;Advanced" ForwardingMode="Relative"/>
+							<SynchronisationMode SupportedRole="SyncSlave" MaxLocalJitter="50" T_PLL_MAX="1000" SupportedSyncProtocols="PTCP"/>
+							<ApplicationRelations StartupMode="Legacy;Advanced">
+								<TimingProperties SendClock="16 32 64 128" ReductionRatio="1 2 4 8 16 32 64 128 256 512"/>
+								<RT_Class3TimingProperties SendClock="16 32 48 64 80 96 112 128" ReductionRatio="1 2 4 8 16" MaxReductionRatioIsochroneMode="1"/>
+							</ApplicationRelations>
+							<MediaRedundancy SupportedRole="Client" AdditionalForwardingRulesSupported="true"/>
+						</InterfaceSubmoduleItem>
+						<PortSubmoduleItem ID="IDS_P1" SubmoduleIdentNumber="0x0000000b" TextId="IDT_PORT1" SubslotNumber="32769" MaxPortRxDelay="173" MaxPortTxDelay="74" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true" PortDeactivationSupported="false" MAUTypes="16" CheckMAUTypeSupported="true" CheckMAUTypeDifferenceSupported="true">
+							<MAUTypeList>
+								<MAUTypeItem Value="16" AdjustSupported="true"/>
+							</MAUTypeList>
+						</PortSubmoduleItem>
+						<PortSubmoduleItem ID="IDS_P2" SubmoduleIdentNumber="0x0000000c" TextId="IDT_PORT2" SubslotNumber="32770" MaxPortRxDelay="173" MaxPortTxDelay="74" LinkStateDiagnosisCapability="Up+Down" SupportsRingportConfig="true" IsDefaultRingport="true" PortDeactivationSupported="false" MAUTypes="16" CheckMAUTypeSupported="true" CheckMAUTypeDifferenceSupported="true">
+							<MAUTypeList>
+								<MAUTypeItem Value="16" AdjustSupported="true"/>
+							</MAUTypeList>
+						</PortSubmoduleItem>
+					</SystemDefinedSubmoduleList>
+					<Graphics>
+						<GraphicItemRef Type="DeviceSymbol" GraphicItemTarget="IDGR_DEVICE"/>
+					</Graphics>
+				</DeviceAccessPointItem>
+
+			</DeviceAccessPointList>
+
+			<!-- ============================================================================================ -->
+			<ModuleList>
+				<!-- DO Type: DRIVE -->
+				<ModuleItem ID="IDM_DRIVE" ModuleIdentNumber="0x000100B0" PhysicalSubslots="1 2 3 4">
+					<ModuleInfo>
+						<Name TextId="IDT_MOD_NAME_DRIVE"/>
+						<InfoText TextId="IDT_MOD_INFO_DRIVE"/>
+					</ModuleInfo>
+					<UseableSubmodules>
+						<SubmoduleItemRef SubmoduleItemTarget="IDS_MAP" AllowedInSubslots="1" FixedInSubslots="1"/>
+						<SubmoduleItemRef SubmoduleItemTarget="IDS_NOSAFE" AllowedInSubslots="2" FixedInSubslots="2"/>
+						<SubmoduleItemRef SubmoduleItemTarget="IDS_TEL3" AllowedInSubslots="3"/>
+						<SubmoduleItemRef SubmoduleItemTarget="IDS_TEL9" AllowedInSubslots="3"/>
+						<SubmoduleItemRef SubmoduleItemTarget="IDS_TEL102" AllowedInSubslots="3"/>
+						<SubmoduleItemRef SubmoduleItemTarget="IDS_TEL111" AllowedInSubslots="3"/>
+						<SubmoduleItemRef SubmoduleItemTarget="IDS_TEL750" AllowedInSubslots="4"/>
+					</UseableSubmodules>
+				</ModuleItem>
+
+			</ModuleList>
+
+			<!-- ============================================================================================ -->
+			<SubmoduleList>
+				<!-- MAP -->
+				<SubmoduleItem ID="IDS_MAP" SubmoduleIdentNumber="0x0000FFFF" API="14848" MayIssueProcessAlarm="false">
+					<IOData/>
+					<ModuleInfo>
+						<Name TextId="IDT_SM_NAME_MAP"/>
+						<InfoText TextId="IDT_SM_INFO_MAP"/>
+					</ModuleInfo>
+				</SubmoduleItem>
+
+				<!-- no safety -->
+				<SubmoduleItem ID="IDS_NOSAFE" SubmoduleIdentNumber="0x00001389" API="14848" MayIssueProcessAlarm="false">
+					<IOData/>
+					<ModuleInfo>
+						<Name TextId="IDT_SM_NAME_NOSAFE"/>
+						<InfoText TextId="IDT_SM_INFO_NOSAFE"/>
+					</ModuleInfo>
+				</SubmoduleItem>
+			
+				<!-- Telegram 3 : 5/9 PZD -->
+				<SubmoduleItem ID="IDS_TEL3" SubmoduleIdentNumber="0x00000003" API="14848" MayIssueProcessAlarm="false">
+					<IOData>
+						<Input Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+						</Input>
+						<Output Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+						</Output>
+					</IOData>
+					<ModuleInfo>
+						<Name TextId="IDT_SM_NAME_TEL3"/>
+						<InfoText TextId="IDT_SM_INFO_TEL3"/>
+					</ModuleInfo>
+					<IsochroneMode T_DC_Base="1" T_DC_Min="8" T_DC_Max="128" T_IO_Base="31250" T_IO_InputMin="3" T_IO_OutputMin="2"/>
+				</SubmoduleItem>
+
+				<!-- Telegram 9 : 10/5 PZD -->
+				<SubmoduleItem ID="IDS_TEL9" SubmoduleIdentNumber="0x00000009" API="14848" MayIssueProcessAlarm="false">
+					<IOData>
+						<Input Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+						</Input>
+						<Output Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+						</Output>
+					</IOData>
+					<ModuleInfo>
+						<Name TextId="IDT_SM_NAME_TEL9"/>
+						<InfoText TextId="IDT_SM_INFO_TEL9"/>
+					</ModuleInfo>
+					<IsochroneMode T_DC_Base="1" T_DC_Min="8" T_DC_Max="128" T_IO_Base="31250" T_IO_InputMin="3" T_IO_OutputMin="2"/>
+				</SubmoduleItem>
+				
+				<!-- Telegram 102 : 6/10 PZD -->
+				<SubmoduleItem ID="IDS_TEL102" SubmoduleIdentNumber="0x00000066" API="14848" MayIssueProcessAlarm="false">
+					<IOData>
+						<Input Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+						</Input>
+						<Output Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+						</Output>
+					</IOData>
+					<ModuleInfo>
+						<Name TextId="IDT_SM_NAME_TEL102"/>
+						<InfoText TextId="IDT_SM_INFO_TEL102"/>
+					</ModuleInfo>
+					<IsochroneMode T_DC_Base="1" T_DC_Min="8" T_DC_Max="128" T_IO_Base="31250" T_IO_InputMin="3" T_IO_OutputMin="2"/>
+				</SubmoduleItem>
+				
+				<!-- Telegram 111 : 12/12 PZD -->
+				<SubmoduleItem ID="IDS_TEL111" SubmoduleIdentNumber="0x0000006F" API="14848" MayIssueProcessAlarm="false">
+					<IOData>
+						<Input Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+						</Input>
+						<Output Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+						</Output>
+					</IOData>
+					<ModuleInfo>
+						<Name TextId="IDT_SM_NAME_TEL111"/>
+						<InfoText TextId="IDT_SM_INFO_TEL111"/>
+					</ModuleInfo>
+					<IsochroneMode T_DC_Base="1" T_DC_Min="8" T_DC_Max="128" T_IO_Base="31250" T_IO_InputMin="3" T_IO_OutputMin="2"/>
+				</SubmoduleItem>
+				
+				<!-- Telegram 750 : 3/1 PZD -->
+				<SubmoduleItem ID="IDS_TEL750" SubmoduleIdentNumber="0x000002EE" API="14848" MayIssueProcessAlarm="false">
+					<IOData>
+						<Input Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_ACTVAL"/>
+						</Input>
+						<Output Consistency="All items consistency">
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+							<DataItem DataType="Unsigned16" TextId="IDT_DATAITEM_REFVAL"/>
+						</Output>
+					</IOData>
+					<ModuleInfo>
+						<Name TextId="IDT_SM_NAME_TEL750"/>
+						<InfoText TextId="IDT_SM_INFO_TEL750"/>
+					</ModuleInfo>
+				</SubmoduleItem>
+			</SubmoduleList>
+			<!-- ============================================================================================ -->
+			<ValueList>
+				<ValueItem ID="VAL_DIAG_ACTIVATION">
+					<Assignments>
+						<Assign Content="0" TextId="IDT_VAL_DIAG_OFF"/>
+						<Assign Content="1" TextId="IDT_VAL_DIAG_ON"/>
+					</Assignments>
+				</ValueItem>
+			</ValueList>
+
+			<!-- ============================================================================================ -->
+			<ChannelDiagList>
+				<ChannelDiagItem ErrorType="16">
+					<Name TextId="IDT_DIAG_NAME_PD0"/>
+					<Help TextId="IDT_DIAG_HELP_PD0"/>
+				</ChannelDiagItem>
+			</ChannelDiagList>
+
+			<!-- ============================================================================================ -->
+			<GraphicsList>
+				<GraphicItem ID="IDGR_DEVICE" GraphicFile="GSDML-0AAA-0005-ED1F-PROFINET"/>
+			</GraphicsList>
+
+			<!-- ============================================================================================ -->
+			<ExternalTextList>
+				<PrimaryLanguage>
+
+<Text TextId="IDT_MOD_NAME_DRIVE" Value="Drive"/>
+<Text TextId="IDT_MOD_INFO_DRIVE" Value="Drive object"/>
+
+<Text TextId="IDT_SM_NAME_MAP" Value="Module Access Point"/>
+<Text TextId="IDT_SM_INFO_MAP" Value="Module Access Point"/>
+<Text TextId="IDT_SM_NAME_EMPTY" Value="empty submodule"/>
+<Text TextId="IDT_SM_INFO_EMPTY" Value="empty submodule"/>
+
+<Text TextId="IDT_SM_NAME_NOSAFE" Value="without PROFIsafe"/>
+<Text TextId="IDT_SM_INFO_NOSAFE" Value="empty submodule"/>
+
+<Text TextId="IDT_SM_NAME_TEL3" Value="Standard telegram 3, PZD-5/9"/>
+<Text TextId="IDT_SM_INFO_TEL3" Value="Standard telegram 3: Closed-loop speed control plus 1 position encoder, PZD length 5/9 words"/>
+
+<Text TextId="IDT_SM_NAME_TEL9" Value="Standard telegram 9, PZD-10/5"/>
+<Text TextId="IDT_SM_INFO_TEL9" Value="Standard telegram 9: Positioning, PZD length 10/5 words"/>
+
+<Text TextId="IDT_SM_NAME_TEL102" Value="HIWIN telegram 102, PZD-6/10"/>
+<Text TextId="IDT_SM_INFO_TEL102" Value="HIWIN telegram 102: Closed-loop speed control with torque reduction, 1 position encoder, PZD length 6/10 words"/>
+
+<Text TextId="IDT_SM_NAME_TEL111" Value="HIWIN telegram 111, PZD-12/12"/>
+<Text TextId="IDT_SM_INFO_TEL111" Value="HIWIN telegram 111: Positioning, incl. MDI, PZD length 12/12 words"/>
+
+<Text TextId="IDT_SM_NAME_TEL750" Value="Supplementary telegram 750, PZD-3/1"/>
+<Text TextId="IDT_SM_INFO_TEL750" Value="Supplementary telegram 750, torque control, PZD length 3/1 words"/>
+
+<Text TextId="IDT_DATAITEM_ACTVAL" Value="Status word or actual value"/>
+<Text TextId="IDT_DATAITEM_REFVAL" Value="Control word or setpoint"/>
+
+<Text TextId="IDT_VAL_DIAG_OFF" Value="Inactive"/>
+<Text TextId="IDT_VAL_DIAG_ON" Value="Standard alarms"/>
+
+<Text TextId="IDT_DIAG_NAME_PD0" Value="Drive alarm"/>
+<Text TextId="IDT_DIAG_HELP_PD0" Value="Drive alarm is "/>
+
+<Text TextId="IDT_FamilyDescription" Value="HIWIN E1 Series Drive"/>
+<Text TextId="IDT_DAP_NAME" Value="ED1F-PROFINET Drive"/>
+<Text TextId="IDT_DAP_INFO" Value="IO device HIWIN E1 Series Drive with PROFINET-IO interface (RT, IRT and non-cyclic communications, clock cycle synchronization)"/>
+
+<Text TextId="IDT_PORT1" Value="Port 1"/>
+<Text TextId="IDT_PORT2" Value="Port 2"/>
+<Text TextId="IDT_ISM_CU" Value="PN-IO"/>
+<Text TextId="IDT_SS_IF_CU" Value="X150"/>
+<Text TextId="IDT_SS_P1_CU" Value="X150 P1"/>
+<Text TextId="IDT_SS_P2_CU" Value="X150 P2"/>
+				</PrimaryLanguage>
+			</ExternalTextList>
+		</ApplicationProcess>
+	</ProfileBody>
+</ISO15745Profile>
